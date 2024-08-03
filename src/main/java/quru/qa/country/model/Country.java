@@ -1,8 +1,8 @@
 package quru.qa.country.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public record Country(String name,
                       String code,
-                      Date dateOfIndependent) {
+                      LocalDate dateOfIndependent) {
 }

@@ -6,13 +6,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.proxy.HibernateProxy;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
 
+@Getter
+@Setter
 @Entity
 @Table(name = "country")
 public class CountryEntity {
@@ -28,39 +33,7 @@ public class CountryEntity {
     private String code;
 
     @Column(name = "date_of_independent")
-    private Date date;
-
-    public UUID getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
+    private Date dateOfIndependent;
 
     @Override
     public final boolean equals(Object o) {
