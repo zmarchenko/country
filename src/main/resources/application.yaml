@@ -2,7 +2,7 @@ spring:
   application:
     name: country
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/countries'
+    url: 'jdbc:postgresql://localhost:5432/country-test'
     username: postgres
     password: secret
     hikari:
@@ -20,7 +20,5 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
-    generate-ddl: true
     open-in-view: false
