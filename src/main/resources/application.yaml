@@ -2,7 +2,7 @@ spring:
   application:
     name: country
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/country'
+    url: 'jdbc:postgresql://localhost:5432/countries'
     username: postgres
     password: secret
     hikari:
@@ -12,12 +12,6 @@ spring:
       idle-timeout: 10000
       max-lifetime: 1000
       auto-commit: true
-  flyway:
-    enabled: true
-    baseline-on-migrate: true
-    baseline-version: 0
-    schemas: country
-    locations: classpath:db/migration/country
   jpa:
     hibernate:
       ddl-auto: none

@@ -11,7 +11,6 @@ import lombok.Setter;
 import org.hibernate.proxy.HibernateProxy;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -33,7 +32,7 @@ public class CountryEntity {
     private String code;
 
     @Column(name = "date_of_independent")
-    private Date dateOfIndependent;
+    private LocalDate dateOfIndependence;
 
     @Override
     public final boolean equals(Object o) {
