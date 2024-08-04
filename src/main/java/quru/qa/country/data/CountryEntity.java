@@ -31,7 +31,7 @@ public class CountryEntity {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "date_of_independent")
+    @Column(name = "date_of_independence")
     private LocalDate dateOfIndependence;
 
     @Override

@@ -9,4 +9,6 @@ public interface CountryMapper {
 
     Country toModel(CountryEntity countryEntity);
 
+    CountryEntity toEntity(Country countryModel);
+
 }
