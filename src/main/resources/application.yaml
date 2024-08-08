@@ -16,7 +16,7 @@ spring:
     enabled: true
     baseline-on-migrate: true
     baseline-version: 0
-    schemas: country
+    schemas: public
     locations: classpath:db/migration/country
   jpa:
     hibernate:
@@ -28,5 +28,5 @@ spring:
             non_contextual_creation: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
-    generate-ddl: true
+    generate-ddl: false
     open-in-view: false

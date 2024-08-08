@@ -1,8 +1,11 @@
 package quru.qa.country.model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.UUID;
 
-public record Country(String name,
-                      String code,
-                      Date dateOfIndependent) {
+public record Country(
+        UUID id,
+        String name,
+        String code,
+        LocalDate dateOfIndependence) {
 }
